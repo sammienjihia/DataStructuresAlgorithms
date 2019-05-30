@@ -4,7 +4,7 @@ def bubbleSort(a_list):
 
     for i in range(x):
 
-        for n in range(x-1):
+        for n in range(x-1): # the x-1 is to handle the k+1 when comparing. Example 
             if a_list[n] > a_list[n+1]:
                 a_list[n], a_list[n+1]=a_list[n+1], a_list[n]
             else:
@@ -12,4 +12,8 @@ def bubbleSort(a_list):
 
     return a_list
 
-print(bubbleSort([4,2,3,8,5,9,7,6,10, 1]))
+print(bubbleSort([6,4,3,2,1]))
+
+# Time complexity is of Big O (n2)
+
+# NB range(3) shall return [0,1,2]
